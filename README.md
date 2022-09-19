@@ -1,3 +1,2 @@
-# MyProfile
-# IDE -> VS code
-author
+#MyProfile
+Technology stacK-HTML5
