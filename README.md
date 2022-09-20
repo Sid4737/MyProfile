@@ -1,2 +1,2 @@
 MyProfile
-Technology stack-HTML5
+Technology  stack HTML
