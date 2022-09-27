@@ -4,11 +4,41 @@
 <head>
     <title> Index page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        #nav_bar,
+         a{
+            font-size: 17px;
+            font-weight:bold;
+            text-transform: uppercase;
+            text-align: left;
+            text-decoration: none;
+            font-family: 'Sofia', cursive;
+            background-color:#f39c12;
+        }
 
+        .header_section {
+            text-align: right;
+            background-color: #bdc3c7;
+            color:black;
+        }
+        .iframe{
+            border: none;
+        }
+        .footer{
+            background-color:#f39c12 ;
+        }
+        .link{
+            font-style: italic;
+            font-size: 20px;
+        }
+       
+
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="header_section">
         <p><strong><i class="fa fa-user" aria-hidden="true"></i> Siddhanath Honwar &nbsp;&nbsp;&nbsp;
                 <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp9309877826&nbsp;&nbsp;&nbsp;
                 <i class="fa fa-envelope" aria-hidden="true"></i>&nbspsidhonwar99@gmail.com</strong>
@@ -17,7 +47,7 @@
 
     </header>
 
-    <nav>
+    <nav id="nav_bar">
 
         <a href="home.html" target="my_frame">HOME</a>&nbsp;&nbsp;&nbsp;
         <a href="techStack.html" target="my_frame"> TECH STACK </a>&nbsp;&nbsp;&nbsp;
@@ -29,19 +59,22 @@
     </nav>
 
     <hr>
-    <iframe name="my_frame" src="info.html" width="800px" height="500px">
+    <iframe name="my_frame" src="info.html" width="800px" height="500px" class="iframe">
 
     </iframe>
 
     <footer>
-        <p><strong> Follow me </strong>&nbsp;&nbsp;&nbsp;
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <p class="footer"><strong> <span class="link">Follow me </span></strong>&nbsp;&nbsp;&nbsp;
+           <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             &nbsp;&nbsp;&nbsp;
             <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a> &nbsp;&nbsp;&nbsp;
             <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        
         </p>
     </footer>
+
+
 
 </body>
 
