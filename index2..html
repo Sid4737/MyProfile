@@ -4,56 +4,86 @@
 <head>
     <title> Index page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <style>
         #nav_bar,
-         a{
+        a {
             font-size: 17px;
-            font-weight:bold;
+            font-weight: bold;
             text-transform: uppercase;
             text-align: left;
             text-decoration: none;
             font-family: 'Sofia', cursive;
-            background-color:#f39c12;
+            background-color: #f39c12;
         }
 
         .header_section {
             text-align: right;
             background-color: #bdc3c7;
-            color:black;
-        }
-        .iframe{
+            color: black;
+            }
+
+        .iframe {
             border: none;
         }
-        .footer{
-            background-color:#f39c12 ;
+
+        .footer {
+            background-color: #f39c12;
         }
-        .link{
+
+        .link {
             font-style: italic;
             font-size: 20px;
         }
-       
 
+        #nav_bar a,
+        .header_section {
+            margin-right: 30px;
+        }
+        footer div .follow_me{
+            margin-right: 30px;
+        }
+       footer div #follow-me-lable{
+               font-size: large;
+               font-weight: bold;
+               margin-right: 20px;
+               font-style: italic;
+       }
+       header .names{
+              margin-right: 20px;
+       }
+       header .icon{
+                 margin-left:5px;
+       }
+       .email{
+           font-style: ;
+       }
     </style>
 </head>
 
 <body>
-    <header class="header_section">
-        <p><strong><i class="fa fa-user" aria-hidden="true"></i> Siddhanath Honwar &nbsp;&nbsp;&nbsp;
-                <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp9309877826&nbsp;&nbsp;&nbsp;
-                <i class="fa fa-envelope" aria-hidden="true"></i>&nbspsidhonwar99@gmail.com</strong>
-
-        </p>
-
+    <header>
+        <div class="header_section">
+         <span class="names"><i class="fa fa-user" aria-hidden="true"></i>
+            <span class="icon"> Siddhanath Honwar</span>
+        </span>
+           <span class="names"><i class="fa fa-phone-square" aria-hidden="true"></i>
+            <span class="icon">9309877826</span>
+        </span>
+           <span class="names"> <i class="fa fa-envelope" aria-hidden="true"></i> 
+            <span class="icon"><span class="email">sidhonwar99@gmail.com</span>
+        </span>
+        </span>
+        </div>
     </header>
 
     <nav id="nav_bar">
 
-        <a href="home.html" target="my_frame">HOME</a>&nbsp;&nbsp;&nbsp;
-        <a href="techStack.html" target="my_frame"> TECH STACK </a>&nbsp;&nbsp;&nbsp;
-        <a href="personalDetails.html" target="my_frame">PERSONAL DETAIL</a>&nbsp;&nbsp;&nbsp;
-        <a href="projectDetails.html" target="my_frame"> PROJECT DETAILS</a>&nbsp;&nbsp;&nbsp;
-        <a href="gallary.html" target="my_frame">GALLARY</a>&nbsp;&nbsp;&nbsp;
+        <a href="home.html" target="my_frame">HOME</a>
+        <a href="techStack.html" target="my_frame"> TECH STACK </a>
+        <a href="personalDetails.html" target="my_frame">PERSONAL DETAIL</a>
+        <a href="projectDetails.html" target="my_frame"> PROJECT DETAILS</a>
+        <a href="gallary.html" target="my_frame">GALLARY</a>
         <a href="registrationForm.html" target="my_frame">STUDENT REGISTRATION FORM</a>
 
     </nav>
@@ -63,15 +93,22 @@
 
     </iframe>
 
-    <footer>
-        <p class="footer"><strong> <span class="link">Follow me </span></strong>&nbsp;&nbsp;&nbsp;
-           <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a> &nbsp;&nbsp;&nbsp;
+    <footer class="footer">
+        <div>
+       <span id="follow-me-lable">Follow me</span> 
+        <span class="follow_me">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </span>
+
+        <span class="follow_me"> <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"
+                    aria-hidden="true"></i>
+            </a>
+        </span>
+        <span class="follow_me">
             <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        
-        </p>
+        </span>
+    </div>
+
     </footer>
 
 
