@@ -4,10 +4,13 @@
 <head>
     <title> Index page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <style>
         #nav_bar,
         a {
+
             font-size: 17px;
             font-weight: bold;
             text-transform: uppercase;
@@ -15,12 +18,25 @@
             text-decoration: none;
             font-family: 'Sofia', cursive;
             background-color: #f39c12;
+            list-style:upper-alpha;
+         }
+          li{
+            display: inline-block;
+            border: 1px solid black;
+            margin-right: 20px;
+            height: 30px;
+            padding-right:5px;
+             }
+        #nav_bar a:hover{
+            text-shadow: 4px 2px 5px red;
+           
         }
 
         .header_section {
             text-align: right;
             background-color: #bdc3c7;
             color: black;
+            margin-bottom: 20px;
             }
 
         .iframe {
@@ -36,10 +52,12 @@
             font-size: 20px;
         }
 
-        #nav_bar a,
-        .header_section {
+        #nav_bar a
+         {
             margin-right: 30px;
-        }
+            text-shadow:4px 2px 5px darkslategrey;
+
+          }
         footer div .follow_me{
             margin-right: 30px;
         }
@@ -56,7 +74,7 @@
                  margin-left:5px;
        }
        .email{
-           font-style: ;
+           font-style: italic;
        }
     </style>
 </head>
@@ -78,13 +96,13 @@
     </header>
 
     <nav id="nav_bar">
-
-        <a href="home.html" target="my_frame">HOME</a>
-        <a href="techStack.html" target="my_frame"> TECH STACK </a>
-        <a href="personalDetails.html" target="my_frame">PERSONAL DETAIL</a>
-        <a href="projectDetails.html" target="my_frame"> PROJECT DETAILS</a>
-        <a href="gallary.html" target="my_frame">GALLARY</a>
-        <a href="registrationForm.html" target="my_frame">STUDENT REGISTRATION FORM</a>
+      
+        <li><a href="home.html" target="my_frame">HOME</a></li>
+        <li><a href="techStack.html" target="my_frame"> TECH STACK </a></li>
+        <li><a href="personalDetails.html" target="my_frame">PERSONAL DETAIL</a></li>
+        <li><a href="projectDetails.html" target="my_frame"> PROJECT DETAILS</a></li>
+        <li><a href="gallary.html" target="my_frame">GALLARY</a></li>
+        <li><a href="registrationForm.html" target="my_frame">STUDENT REGISTRATION FORM</a></li>
 
     </nav>
 

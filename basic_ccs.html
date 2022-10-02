@@ -36,6 +36,7 @@
             border: 5px solid cadetblue;
             width: 250px;
             height: 250px;
+            box-shadow: 4px 2px 5px black;
             /* padding-left: 50px;
             padding-top: 20px;
             padding-right:30px;
@@ -47,22 +48,59 @@
             border: 5px solid blueviolet;
             width: 250px;
             height: 250px;
-         
-        }
+          }
         h3{
             border: 1px solid cadetblue;
         }
+        .show:hover{
+            border: 1px solid cadetblue;
+            margin: top 20px;
+            background-color:black;
+            color: white;
+        }
+        li{
+            display:inline-block;
+            border: 1px solid cadetblue;
+            margin-right: 20px;
+            width: 180px;
+            height: 30px;
+            }
+         .drawing{
+            visibility: hidden;
+         }   
+       
     </style>
 </head>
 
 <body>
-    <div class="box1">Hello how are you</div>
-    <div class="box2">Good Morning</div>
+    <div class="box1">
+        Hello how are you
+    </div>
+
+    <div class="box2">
+        Good Morning
+    </div>
+
+    <marquee direction="left" width="500px" height="300px" behaviour="sliding"> 
+        <h2>Main heading</h2>
+    </marquee>
+    <div class="show">
+        Hello
+    </div>
+    <ol class="hobbies">
+       <li>Reading educational book</li>
+       <li>Listning music</li>
+       <li class="drawing">Drawing manadala art</li>
+       <li>Learning new things</li>
+      
+    </ol>
+
     <h3> My Name is <span class="name">Siddharth Honwar</span></h3>
     <p>I am Engineering Graduates</p>
     <h3 class="company">Currently working in TCS</h3>
     <h4 id="address">Address:Pune</h4>
     <h3 class="personal">My Father is farmer</h3>
+    
     <h3 class="personal">I am single</h3>
 </body>
 

@@ -3,145 +3,217 @@
 
 <head>
     <title>Student Registration Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+        form {
+            width: fit-content;
+           }
+           fieldset{
+               background-color: rgb(202, 208, 192);
+           }
+          
+       lable {
+            color:cadetblue;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input[type="text"],input[type="email"],input[type="number"],input[type="date"],input[type="file"],
+        input[type="password"]{
+             color:blue;
+             background-color: bisque;
+             width: 180px;
+             text-transform: capitalize;
+             border-radius: 10px;
+             }
+             select{
+                color:blue;
+                background-color: bisque;
+                width: 100px;
+                text-transform: capitalize;
+             border-radius: 10px;
+             }
+           
+        input[type="submit"],input[type="reset"],button{
+                 background-color: bisque;
+                 color:blue;
+                 width: 100px;
+                 border-radius: 20px;
+                 height: 30px;
+          }
+          input[type="submit"]:hover{
+              background-color: aqua;
+          }
+          input[type="reset"]:hover{
+            background-color: aqua;
+          }
+          button:hover{
+            background-color: aqua;
+          }
+          textarea{
+                  background-color:bisque;
+                  border-radius: 60px;
+                  height:150px;
+                  width:auto;
+          }     
+     
+        
+    </style>
 </head>
 
 <body>
-    <h2> Student Registration Form </h2>
     <form>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <lable>Full Name</lable>
-                    </td>
-                    <td><input type="text" placeholder="Only first name please" autofocus required></td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Last Name</lable>
-                    </td>
-                    <td><input type="text" placeholder="only last name please"> </td>
-                </tr>
-                <tr>
-                    <td>Mobile No</td>
-                    <td><input type="number"></td>
+        <fieldset>
+            <legend>
+                <h2> Student Registration Form </h2>
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <lable>Full Name</lable>
+                        </td>
+                        <td><input type="text" placeholder="Only first name please" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Last Name</lable>
+                        </td>
+                        <td><input type="text" placeholder="only last name please"> </td>
+                    </tr>
+                    <tr>
+                        <td><lable>Mobile No</lable></td>
+                        <td><input type="number"></td>
 
 
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Email Address</lable>
-                    </td>
-                    <td><input type="email" placeholder="abc@gmail.com"> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Password</lable>
-                    </td>
-                    <td><input type="password"> </td>
-                </tr>
-                <tr>
-                    <td> <label>Graduation</label> </td>
-                    <td><input type="text"> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable> Date of Birth</lable>
-                    </td>
-                    <td> <input type="date"> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Pass out Year</lable>
-                    </td>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <td><lable>Country</lable></td>
-                    <td><input type="text" value="India" disabled></td>
-                </tr>
-                <tr>
-                    <td><lable>Citizenship</lable></td>
-                    <td><input type="text" value="India" readonly></td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Profile Photo</lable>
-                    </td>
-                    <td><input type="file"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Upload all Marksheets</lable>
-                    </td>
-                    <td><input type="file" multiple></td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Select option</lable>
-                    </td>
-                    <td><select>
-                            <option>BE</option>
-                            <option>BCA</option>
-                            <option>MCA</option>
-                            <option>BCS</option>
-                            <option>MBA</option>
-                        </select>
-                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Email Address</lable>
+                        </td>
+                        <td><input type="email" placeholder="abc@gmail.com"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Password</lable>
+                        </td>
+                        <td><input type="password"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Graduation</lable>
+                        </td>
+                        <td><input type="text"></td>
+                        
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable> Date of Birth</lable>
+                        </td>
+                        <td> <input type="date"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Pass out Year</lable>
+                        </td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Country</lable>
+                        </td>
+                        <td><input type="text" value="India" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Citizenship</lable>
+                        </td>
+                        <td><input type="text" value="India" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Profile Photo</lable>
+                        </td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Upload all Marksheets</lable>
+                        </td>
+                        <td><input type="file" multiple></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Select option</lable>
+                        </td>
+                        <td><select>
+                                <option>BE</option>
+                                <option>BCA</option>
+                                <option>MCA</option>
+                                <option>BCS</option>
+                                <option>MBA</option>
+                            </select>
+                        </td>
 
-                </tr>
-                <tr>
-                    <td><lable>Trainings</lable></td>
-                    <td><input type="checkbox" checked><lable>Angular</lable>
-                        <input type="checkbox"><lable>React</lable>
-                        <input type="checkbox"><lable>Java</lable>
-                        <input type="checkbox"><lable>Testing</lable>
-                    </td>
-                <tr>
-                <tr>
-                    <td><lable>Gender</lable></td>
-                    <td>
-                      <input type="radio" name="gender"><lable>Female</lable>
-                      <input type="radio" name="gender" checked><lable>Male</lable>
-                      <input type="radio" name="gender"><lable>Others</lable>
-                   </td>
-                </tr>
-                <tr>
-                    <td>
-                        <lable>Permanent Address</lable>
-                    </td>
-                    <td><textarea rows="6" cols="30"></textarea> </td>
-                </tr>
-                <tr>
-                     <td><lable>Download Template</lable></td>
-                     <td>
-                         <button>
-                            <a href="training outline pdf" target="_blank">Download</a>
-                         </button>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Trainings</lable>
+                        </td>
+                        <td><input type="checkbox" checked>
+                            <lable>Angular</lable>
+                            <input type="checkbox">
+                            <lable>React</lable>
+                            <input type="checkbox">
+                            <lable>Java</lable>
+                            <input type="checkbox">
+                            <lable>Testing</lable>
+                        </td>
+                    <tr>
+                    <tr>
+                        <td>
+                            <lable>Gender</lable>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender">
+                            <lable>Female</lable>
+                            <input type="radio" name="gender" checked>
+                            <lable>Male</lable>
+                            <input type="radio" name="gender">
+                            <lable>Others</lable>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Permanent Address</lable>
+                        </td>
+                        <td><textarea rows="6" cols="30"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>Download Template</lable>
+                        </td>
+                        <td>
+                            <button>
+                                <a href="training outline pdf" target="_blank">Download</a>
+                            </button>
 
-                     </td>
+                        </td>
 
-                </tr>
-                <tr>
-                    <td><input type="submit"></td>
-                    <td><input type="reset"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit"></td>
+                        <td><input type="reset"></td>
 
-                </tr>
+                    </tr>
 
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </fieldset>
     </form>
 
-    <p><b>SSO sign in options</b>&nbsp;&nbsp;&nbsp;
-
-        <a href="https://www.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
-        &nbsp;&nbsp;
-        <a href="https://www.instagram.com"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        &nbsp;&nbsp;
-        <a href="https://www.facebook.com"target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a>
-
+   
     </p>
 
 </body>
